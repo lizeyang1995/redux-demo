@@ -20,7 +20,7 @@ export const getListAction = (data) => ({
     data
 })
 
-//用中间件
+//用中间件thunk可以传递函数，否则是传递对象
 export const getTodoList = () => {
     return (dispatch) => {
         axios.get("http://localhost:3000/data")
